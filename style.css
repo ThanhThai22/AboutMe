@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 150%;
+    font-size: 14px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: #333!important;
+    position: relative;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+div{
+    display: block;
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.top-header{
+    width: 100%;
+    float: left;
+    background: #EEE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.hotline {
+    float: left;
+    padding-top: 5px;
+    color: #666;
+}
+
+.hotline i {
+    font-size: 20px;
+    color: #F00;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.hotline a {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a, a:hover, img, li {
+    text-decoration: none!important;
+    cursor: pointer;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+}
+
+.top-header .hotline a{
+    text-decoration: none;
+    color: black;
+}
+
+.cart {
+    float: right;
+    background: #F28902;
+    color: #FFF;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.cart a {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.cart i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.login {
+    float: right;
+    color: #333;
+    position: relative;
+}
+
+.news-col ul, .news-col ul li, .login ul, .login ul li, .product-block ul, .product-block ul li, .menu-footer ul, .menu-footer ul li, .col-signin-left ul, .col-signin-left ul li, .form-contact ul, .form-contact ul li, .intro-delevery ul, .intro-delevery ul li, .search-page ul, .search-page ul li, .result ul, .result ul li, .hot-news ul, .hot-news ul li, .news-page ul, .news-page ul li, .news-related ul, .news-related ul li, .part-buy ul, .part-buy ul li, .login-cart ul, .login-cart ul li, .order-product ul, .order-product ul li .comment-form ul, .comment-form ul li, .comment-block ul, .comment-block ul li, .info-cus-delivery ul, .info-cus-delivery ul li, .account-col ul, .account-col ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.login ul > li {
+    float: left;
+    padding: 5px 0 5px 18px;
+    text-transform: uppercase;
+}
+
+.login ul li a {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+}
+
+.login ul > li i {
+    margin-right: 5px;
+}
+
+.login ul li ul {
+    display: none;
+    top: 31px;
+    padding: 10px 15px;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #FFF;
+    z-index: 999;
+    border: 1px solid #EEE;
+    border-top: none;
+}
+
+.login ul li ul li {
+    width: 100%;
+    padding: 0;
+    margin: 5px 0;
+    float: left;
+}
+
+.login ul li ul li a.login {
+    background: #F28902;
+}
+
+.login ul li ul li a.facebook {
+    background: #5670a3;
+}
+
+.login ul li ul li a.google {
+    background: #dd4c39;
+}
+
+.login ul li ul li a {
+    background: #999;
+    color: #FFF;
+    padding: 4px 10px 4px 0;
+    width: 100%;
+    float: left;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: capitalize;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+header{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    height: 100px;
+}
+
+.logo {
+    width: 110px;
+    float: left;
+}
+
+.logo a{
+    width: 100%;
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+
+.logo img{
+    height: 80px;
+}
+
+
+/* start: widget-head */
+.widget-head {
+    float: left;
+    font-size: 20px;
+    color: #090;
+    margin-top: 20px;
+}
+
+.widget-head span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF8000;
+    float: left;
+    margin-top: 10px;
+}
+/* end: widget-head */
+
+.search-block {
+    width: 300px;
+    float: right;
+    margin-top: 30px;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+#navbar {
+    width: 100%;
+    float: left;
+    top: -100px;
+    background: #3daa12;
+    height: 48px;
+}
+
+#cssmenu {
+    float: left;
+    z-index: 998;
+    height: 96px;
+}
+
+#cssmenu > ul > li {
+    float: left;
+}
+
+#cssmenu > ul > li > a {
+    padding: 17px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #menu-button {
+    margin: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#cssmenu > ul > li.has-sub > a {
+    padding-right: 20px;
+}
+
+#cssmenu > ul > li:hover > a, #cssmenu > ul > li.active > a {
+    background: rgba(0,0,0,0.2);
+}
+
+#cssmenu li:hover > ul {
+    left: auto;
+    background: saddlebrown;
+    box-shadow: 5px 7px 6px #000;
+}
+
+#cssmenu ul ul {
+    position: absolute;
+    left: -9999px;
+}
+
+#cssmenu #menu-button {
+    display: none;
+}
+
+#cssmenu > ul > li {
+    float: left;
+}
+
+#cssmenu ul ul li a {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    padding: 9px 15px;
+    width: 180px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* subback */
+.sub-bg{
+    width: 100%;
+    float: left;
+}
+
+.sub-head {
+    font-size: 13px;
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+}
+
+.sub-head a {
+    color: #333;
+    font-size: 12px;
+    padding-right: 10px;
+    float: left;
+}
+
+
+/* footer:begin */
+footer {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    background: saddlebrown;
+}
+
+footer:hover{
+    box-shadow: 10px 10px 3px #000;
+    margin-bottom: 15px;
+    width: 98%;
+    margin-left: 8px;
+}
+
+.menu-footer {
+    width: calc(50% - 150px);
+    float: left;
+}
+
+.info-footer h4, .menu-footer h4, .address-footer h4 {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: greenyellow;
+}
+
+.menu-footer ul li {
+    width: 100%;
+    float: left;
+    
+}
+
+.menu-footer ul li a {
+    color: #333;
+    float: left;
+    font-size: 14px;
+    padding: 2px 0;
+    color: #EEE;
+}
+
+.info-footer {
+    width: 50%;
+    float: left;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.info-footer p {
+    padding-bottom: 0;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+big {
+    font-size: larger;
+    color: #EEE;
+}
+
+.address-footer {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    background: #333;
+}
+
+.address-footer:hover{
+    box-shadow: 10px 10px 3px #000;
+    margin-bottom: 15px;
+    width: 98%;
+    margin-left: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.address-footer p {
+    padding-bottom: 0;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.copyright {
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    text-align: left;
+    color: #333;
+    padding: 10px 0;
+    line-height: 1.2;
+}
+/* footer:end */
+
